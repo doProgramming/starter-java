@@ -1,4 +1,4 @@
-package com.iamvickyav.springboot.SpringBootRestWithH2.mera;
+package com.mera.user;
 
 import java.util.List;
 

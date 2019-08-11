@@ -1,4 +1,4 @@
-package com.iamvickyav.springboot.SpringBootRestWithH2.mera;
+package com.mera.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

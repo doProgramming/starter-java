@@ -1,4 +1,4 @@
-package com.iamvickyav.springboot.SpringBootRestWithH2.mera;
+package com.mera.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface UserRoleRepository extends JpaRepository<UserEntity, Long> {
 
-    @Query(value = "select * from user join role on user.role_fk = role.role_id where role.name = :userName", nativeQuery = true)
+    @Query(value = "select * from user join role on user.fk_role = role.id where role.type = :userName", nativeQuery = true)
     List<UserEntity> getRoleForUser(@Param("userName") String userName);
 }

@@ -1,5 +1,6 @@
-package com.iamvickyav.springboot.SpringBootRestWithH2.mera;
+package com.mera.user;
 
+import com.mera.RoleEntity;
 import lombok.Data;
 
 import javax.persistence.*;

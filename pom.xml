@@ -8,8 +8,8 @@
 	<version>0.0.2-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>SpringBootRestWithH2</name>
-	<description>Demo project for Spring Boot</description>
+	<name>QMS</name>
+	<description>Mera 2019 skill set app</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -43,7 +43,7 @@
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
-<!--			We need compile which is default scope so that we can use it from console at same time-->
+<!--			We need compile which is default scope so that we can use it from console at same time, check this???-->
 			<scope>provided</scope>
 			<version>1.4.199</version>
 		</dependency>

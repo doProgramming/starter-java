@@ -1,4 +1,4 @@
-package com.iamvickyav.springboot.SpringBootRestWithH2.mera;
+package com.mera;
 
 import lombok.Data;
 
@@ -12,10 +12,10 @@ import javax.persistence.Table;
 @Data
 public class RoleEntity {
 
-    @Column(name = "role_id")
+    @Column(name = "id")
     @Id
     private int id;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "type")
+    private String type;
 }
