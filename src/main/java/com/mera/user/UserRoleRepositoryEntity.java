@@ -1,6 +1,6 @@
 package com.mera.user;
 
-import com.mera.RoleEntity;
+import com.mera.role.RoleEntity;
 import lombok.Data;
 
 import javax.persistence.*;

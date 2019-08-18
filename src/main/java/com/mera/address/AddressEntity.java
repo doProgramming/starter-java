@@ -1,4 +1,4 @@
-package com.mera.user;
+package com.mera.address;
 
 import lombok.Data;
 

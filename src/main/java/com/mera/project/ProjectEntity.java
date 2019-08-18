@@ -1,4 +1,4 @@
-package com.mera;
+package com.mera.project;
 
 import lombok.Data;
 
@@ -8,14 +8,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "role")
+@Table
 @Data
-public class RoleEntity {
+public class ProjectEntity {
 
-    @Column(name = "id")
     @Id
+    @Column(name = "id")
     private int id;
 
-    @Column(name = "type")
-    private String type;
+    @Column(name = "name")
+    private String name;
 }

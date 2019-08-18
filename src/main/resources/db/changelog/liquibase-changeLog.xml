@@ -10,6 +10,7 @@
 <!--    -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; MIGRATION &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
 <!--    &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
     <include file="db/changelog/migration/schema-migration1.sql" relativeToChangelogFile="false"/>
+    <include file="db/changelog/migration/schema-migration2.sql" relativeToChangelogFile="false"/>
 
 <!--    DATA-->
 
