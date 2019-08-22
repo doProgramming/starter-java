@@ -1,29 +1,19 @@
 package com.mera.email;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.JavaMailSenderImpl;
-import org.springframework.stereotype.Service;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Service
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Email {
 
-    private final Logger LOG = LoggerFactory.getLogger(Email.class);
-    private JavaMailSender javaMailSender = new JavaMailSenderImpl();
+    private String sender;
+    private String receiver;
+    private String body;
+    private String subject;
+    private String emailTo;
+    private String emailFrom;
 
-    public void sendEmail() {
-
-        SimpleMailMessage msg = new SimpleMailMessage();
-        msg.setFrom("asd@yahoo.com");
-        msg.setTo("petrovicstrahinja@yahoo.com");
-
-        msg.setSubject("Testing from Spring Boot");
-        msg.setText("Hello World \n Spring Boot Email");
-
-        javaMailSender.send(msg);
-        LOG.debug("Email has been sent");
-        LOG.info(((Boolean) LOG.isDebugEnabled()).toString());
-    }
 }
