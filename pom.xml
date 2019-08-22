@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.iamvickyav.springboot</groupId>
+	<groupId>com.doProgramming</groupId>
 	<artifactId>SpringBootRestWithH2</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -72,10 +72,16 @@
 			<artifactId>spring-boot-starter-security</artifactId>
 			<version>1.5.2.RELEASE</version>
 		</dependency>
+		<!-- send email -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
     </dependencies>
 
 	<build>
 		<plugins>
+			<!-- Package as an executable jar/war -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -89,6 +95,12 @@
 					<propertyFile>src/main/resources/liquibase.properties</propertyFile>
 				</configuration>
 			</plugin>
+<!--			This can be commented it is being used only for app engine-->
+				<plugin>
+					<groupId>com.google.appengine</groupId>
+					<artifactId>appengine-maven-plugin</artifactId>
+					<version>1.9.9</version>
+				</plugin>
 		</plugins>
 	</build>
 
