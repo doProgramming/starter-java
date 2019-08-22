@@ -17,5 +17,5 @@
     <include file="db/changelog/data/schema-data1.sql" relativeToChangelogFile="false"/>
     <include file="db/changelog/data/schema-data2.sql" relativeToChangelogFile="false"/>
     <include file="db/changelog/data/schema-data3.sql" relativeToChangelogFile="false"/>
-    <include file="db/changelog/data/schema-data4 .sql" relativeToChangelogFile="false"/>
+    <include file="db/changelog/data/schema-data4.sql" relativeToChangelogFile="false"/>
 </databaseChangeLog>
